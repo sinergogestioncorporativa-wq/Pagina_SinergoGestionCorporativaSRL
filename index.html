@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINERGO GESTIÓN CORPORATIVA S.R.L. - Consultoría Corporativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/isotipo.png" type="image/png">
+</head>
+<body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="header">
+        <a href="#inicio" class="logo" aria-label="SINERGO GESTIÓN CORPORATIVA inicio">
+            <span class="logo-icon">
+                <img src="img/isotipo.png" alt="Isotipo SINERGO" class="logo-image">
+            </span>
+            <span class="logo-text">
+                <strong class="logo-text-full">SINERGO GESTIÓN CORPORATIVA S.R.L.</strong>
+                <strong class="logo-text-mobile">SINERGO SRL</strong>
+                <small>Su Aliado Estratégico</small>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegacion principal">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#casos">Casos de Éxito</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn btn-primary" id="contactBtn" type="button">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.2-8 4.8-8-4.8V6l8 4.8L20 6v2.2z"/></svg>
+                <span class="contact-text">Contactanos</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileSidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="mobileSidebar" aria-hidden="true">
+        <div class="sidebar-top">
+            <h3>Menu</h3>
+            <button type="button" id="closeSidebar" aria-label="Cerrar menu">x</button>
+        </div>
+        <nav class="sidebar-nav" aria-label="Menu movil">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#casos">Casos de Éxito</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <main>
+        <section class="hero" id="inicio">
+            <!-- <div class="hero-decorative-line"></div> -->
+            <article class="hero-content">
+                <h1 class="hero-title">SU ALIADO ESTRATÉGICO <br>INDISPENSABLE.</h1>
+                <h2 class="hero-tagline">ORIENTADOS AL FUTURO. EXPERIENCIA EN GESTIÓN.</h2>
+                <p class="hero-copy">Unificamos el resguardo legal, la precisión financiera y la maximización del talento humano en una sola mesa estratégica para blindar el futuro de su empresa en Bolivia.</p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-outline" href="#servicios">
+                        VER SERVICIOS
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </a>
+                    <a class="btn btn-primary" href="#contacto">
+                        CONTACTAR AHORA
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="nosotros" id="nosotros">
+            <article class="nosotros-content">
+                <div class="nosotros-copy">
+                    <p class="eyebrow">Quiénes somos</p>
+                    <h2>Nuestra Firma</h2>
+                    <p><strong>Nuestro Enfoque:</strong> En la alta gerencia, las decisiones no se toman de forma aislada. SINERGO nace en Bolivia como una firma de alta gama diseñada para eliminar la fricción entre las áreas de soporte de las empresas. No somos un proveedor externo que emite informes desde la distancia; nos convertimos en el motor interno que co-pilota su empresa. Alineamos la rigurosidad normativa, la ingeniería contable y la psicología organizacional para proteger su patrimonio y proyectar su negocio hacia el futuro de manera sinérgica.</p>
+
+                    </div>
+                    <div class="nosotros-visual">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Equipo SINERGO">
+                    </div>
+
+                    <div class="mission-vision-grid">
+                        <article class="highlight-card highlight-card-primary">
+                            <h3>Nuestra Misión</h3>
+                            <p>Brindar servicios integrales de consultoría, asesoramiento y gestión empresarial de alta gama en las áreas legal, contable y de talento humano. Transformamos la complejidad normativa y operativa en soluciones estratégicas para nuestros clientes, integrando la innovación tecnológica para garantizar la máxima eficiencia y blindar el patrimonio empresarial.</p>
+                        </article>
+
+                        <article class="highlight-card highlight-card-secondary">
+                            <h3>Nuestra Visión</h3>
+                            <p>Ser la consultora corporativa multidisciplinaria líder y el socio estratégico por excelencia a nivel nacional, consolidando una red de atención integral desde nuestra casa matriz en La Paz. Nos proyectamos como el estándar de oro en la sistematización de gerencias mediante el uso de herramientas tecnológicas avanzadas.</p>
+                        </article>
+                    </div>
+            </article>
+        </section>
+
+        <section class="servicios" id="servicios">
+            <div class="section-header">
+                <p class="eyebrow">Servicios Integrales</p>
+                <h2>Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones multidisciplinarias en legal, contable y talento humano.</p>
+            </div>
+
+            <div class="servicios-carousel" aria-label="Carrusel de servicios">
+                <button class="casos-nav servicios-prev" type="button" aria-label="Ver servicios anteriores" onclick="scrollServicios(-1)">
+                    <span aria-hidden="true">‹</span>
+                </button>
+
+                <div class="servicios-grid" id="serviciosTrack">
+                    <article class="service-card">
+                        <div class="service-media">
+                            <img src="img/areaLegal.png" alt="Área legal y corporativa">
+                        </div>
+                        <h3>I. Área Legal y Corporativa</h3>
+                        <p><strong>Descripción:</strong> Seguridad jurídica integral y blindaje patrimonial para garantizar la expansión de sus negocios.</p>
+                        <p><strong>Soluciones:</strong> Constitución y reorganización societaria (SEPREC), redacción y auditoría de contratos, asesoría laboral preventiva y patrocinio en litigios comerciales.</p>
+                        <p><strong>Beneficio:</strong> Evita pasivos legales y asegura que cada paso de su empresa esté respaldado por la normativa boliviana vigente.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-media">
+                            <img src="img/areaContable.png" alt="Área contable y tributaria">
+                        </div>
+                        <h3>II. Área Contable y Tributaria</h3>
+                        <p><strong>Descripción:</strong> Ingeniería financiera y control de gestión para maximizar su rentabilidad y asegurar el cumplimiento impositivo.</p>
+                        <p><strong>Soluciones:</strong> Outsourcing contable, estrategia tributaria ante el SIN, y auditorías financieras o peritajes forenses.</p>
+                        <p><strong>Beneficio:</strong> Claridad absoluta en sus números, toma de decisiones basada en datos reales y eliminación de riesgos de multas estatales.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Gestión del talento humano">
+                        </div>
+                        <h3>III. Gestión del Talento Humano (GTH)</h3>
+                        <p><strong>Descripción:</strong> Alineamos el comportamiento organizacional con los objetivos de rentabilidad y mitigamos riesgos laborales.</p>
+                        <p><strong>Soluciones:</strong> Psicología organizacional (clima laboral), Headhunting ejecutivo, estructuración de manuales de funciones (MOF) y externalización de planillas de sueldos.</p>
+                        <p><strong>Beneficio:</strong> Retención de talento clave, equipos de alto rendimiento y cero contingencias ante el Ministerio de Trabajo.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Servicios integrados multidisciplinarios">
+                        </div>
+                        <h3>IV. Servicios Integrados</h3>
+                        <p>Auditoría preventiva multidisciplinaria simultánea (Legal, Contable y RRHH) ideal para fusiones, adquisiciones o control de gestión. Externalización y sincronización de gerencias en la nube.</p>
+                    </article>
+                </div>
+
+                <button class="casos-nav servicios-next" type="button" aria-label="Ver siguientes servicios" onclick="scrollServicios(1)">
+                    <span aria-hidden="true">›</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="section-header">
+                <p class="eyebrow">FAQ</p>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="faq-layout">
+                <div class="faq-media">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="Reunión corporativa SINERGO">
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>¿En qué se diferencia SINERGO de una consultora tradicional?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>En lugar de contratar a un bufete de abogados, a una firma contable y a una agencia de recursos humanos por separado, en SINERGO usted tiene a los tres equipos trabajando en sincronía bajo una misma mesa estratégica. Esto elimina errores, ahorra tiempo y optimiza recursos.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>¿Atienden a empresas fuera de La Paz?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>Sí. Operamos desde nuestra casa matriz en el centro corporativo de La Paz, pero nuestra infraestructura digital y de gobierno corporativo nos permite gestionar clientes, asociaciones y procesos de manera integral en Santa Cruz, Cochabamba y el resto del país.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>¿Cómo funciona la modalidad de servicio continuo?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>Trabajamos mediante contratos. Nos convertimos en su departamento externo de soporte, brindándole atención ilimitada en el día a día para sus requerimientos contables, legales y de personal, con tarifas estructuradas según el volumen de su empresa.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>¿Utilizan plataformas tecnológicas para sus clientes?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>Sí. Promovemos el Smart Compliance. Utilizamos sistemas en la nube para el seguimiento de sus estados financieros, digitalización de sus contratos y control de nóminas, brindándole acceso y transparencia total en tiempo real.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="casos" id="casos">
+            <div class="section-header">
+                <p class="eyebrow">Casos de éxito</p>
+                <h2>Proyectos Realizados</h2>
+            </div>
+
+            <div class="casos-carousel" aria-label="Carrusel de proyectos realizados">
+                <button class="casos-nav casos-prev" type="button" aria-label="Ver proyectos anteriores" onclick="scrollCases(-1)">
+                    <span aria-hidden="true">‹</span>
+                </button>
+
+                <div class="casos-grid" id="casosTrack">
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Caso: Empresa Manufacturera">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Optimización de Procesos Manufactureros</h3>
+                        <p class="caso-industry">Industria Manufacturera</p>
+                        <p>Implementamos un sistema integral de reingeniería que aumentó la producción en 35% y redujo costos operacionales en 22%.</p>
+                        <div class="caso-metrics">
+                            <span>+35% Producción</span>
+                            <span>-22% Costos</span>
+                            <span>6 meses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Caso: Transformación Digital">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Transformación Digital Integral</h3>
+                        <p class="caso-industry">Comercio Electrónico</p>
+                        <p>Modernizamos la infraestructura tecnológica y procesos digitales, resultando en crecimiento de ventas online de 150%.</p>
+                        <div class="caso-metrics">
+                            <span>+150% Ventas</span>
+                            <span>-40% Tiempos</span>
+                            <span>8 meses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Caso: Reorganización">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Reorganización Estructural</h3>
+                        <p class="caso-industry">Servicios Financieros</p>
+                        <p>Reestructuramos la organización y procesos, mejorando la eficiencia administrativa y reduciendo tiempos de gestión.</p>
+                        <div class="caso-metrics">
+                            <span>+45% Eficiencia</span>
+                            <span>-30% Tiempos</span>
+                            <span>4 meses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Caso: Control Financiero">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Control Financiero y Tablero Gerencial</h3>
+                        <p class="caso-industry">Industria de Servicios</p>
+                        <p>Diseñamos reportes ejecutivos y controles de gestión que mejoraron la visibilidad financiera y la toma de decisiones.</p>
+                        <div class="caso-metrics">
+                            <span>+60% Visibilidad</span>
+                            <span>-25% Desvíos</span>
+                            <span>3 meses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=600&auto=format&fit=crop" alt="Caso: Gestión de Talento">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Gestión de Talento y Estructura Organizacional</h3>
+                        <p class="caso-industry">Retail y Consumo Masivo</p>
+                        <p>Redefinimos funciones, procesos de selección y seguimiento de desempeño para elevar la productividad del equipo.</p>
+                        <div class="caso-metrics">
+                            <span>+28% Productividad</span>
+                            <span>-18% Rotación</span>
+                            <span>5 meses</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="caso-card">
+                    <div class="caso-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Caso: Normalización Societaria">
+                    </div>
+                    <div class="caso-content">
+                        <h3>Normalización Societaria y Cumplimiento</h3>
+                        <p class="caso-industry">Empresas en Crecimiento</p>
+                        <p>Regularizamos documentación, contratos y estructura legal para reducir contingencias y ordenar la operación empresarial.</p>
+                        <div class="caso-metrics">
+                            <span>100% Orden</span>
+                            <span>-50% Riesgos</span>
+                            <span>2 meses</span>
+                        </div>
+                    </div>
+                </article>
+                </div>
+
+                <button class="casos-nav casos-next" type="button" aria-label="Ver siguientes proyectos" onclick="scrollCases(1)">
+                    <span aria-hidden="true">›</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <div class="section-header">
+                <p class="eyebrow">Lo que dicen</p>
+                <h2>Testimonios de Clientes</h2>
+            </div>
+
+            <div class="testimonios-carousel">
+                <article class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=32" alt="Carlos González">
+                    <div class="testimonial-body">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Excelente trabajo. El equipo fue muy profesional y entregó resultados superiores a lo esperado."</p>
+                        <div class="testimonial-author">
+                            <strong>Carlos González</strong>
+                            <small>Director General, Empresa XYZ</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=45" alt="María López">
+                    <div class="testimonial-body">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"El asesoramiento fue invaluable. Nos ayudó a reorganizar completamente nuestros procesos."</p>
+                        <div class="testimonial-author">
+                            <strong>María López</strong>
+                            <small>CEO, Startup Tech</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=12" alt="Juan Martínez">
+                    <div class="testimonial-body">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Recomendamos ampliamente a esta consultora. Son expertos en lo que hacen y muy atentos."</p>
+                        <div class="testimonial-author">
+                            <strong>Juan Martínez</strong>
+                            <small>Presidente, Grupo Empresarial</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--
+        <section class="equipo" id="equipo">
+            <div class="section-header">
+                <p class="eyebrow">Nuestro equipo</p>
+                <h2>Consultores Expertos</h2>
+            </div>
+
+            <div class="equipo-grid">
+                <article class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Consultor">
+                    <h3>Roberto Silva</h3>
+                    <p>Consultor Senior</p>
+                    <small>Especialista en Estrategia Empresarial</small>
+                </article>
+
+                <article class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Consultora">
+                    <h3>Andrea Rodríguez</h3>
+                    <p>Consultora Senior</p>
+                    <small>Especialista en Transformación Digital</small>
+                </article>
+
+                <article class="team-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Consultor">
+                    <h3>Miguel Fernández</h3>
+                    <p>Consultor Pleno</p>
+                    <small>Especialista en Procesos Empresariales</small>
+                </article>
+
+                <article class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Consultora">
+                    <h3>Sofía Moreno</h3>
+                    <p>Consultora Plena</p>
+                    <small>Especialista en Recursos Humanos</small>
+                </article>
+            </div>
+        </section>
+        -->
+
+        <!-- <section class="cta">
+            <h2>¿Listo para transformar tu negocio?</h2>
+            <p>Contacta con nuestro equipo para una asesoría sin compromiso</p>
+            <button class="btn btn-primary btn-large" type="button">Solicitar Consulta</button>
+        </section> -->
+
+        <section class="contact-section" id="contacto">
+            <div class="section-header">
+                <p class="eyebrow">Contacto directo</p>
+                <h2>Solicita una asesoría</h2>
+                <p class="section-subtitle">Completa tus datos y envía tu solicitud al WhatsApp ejecutivo.</p>
+            </div>
+
+            <div class="contact-layout">
+                <article class="contact-panel contact-details">
+                    <h3>Atención ejecutiva</h3>
+                    <p>Cuéntanos qué necesitas y te responderemos con una propuesta clara, rápida y profesional.</p>
+                    <ul>
+                        <li>Consultoría legal, contable y de RRHH</li>
+                        <li>Atención personalizada para empresas</li>
+                        <li>Respuesta directa por WhatsApp</li>
+                    </ul>
+                </article>
+
+                <form class="contact-panel contact-form" id="contactForm">
+                    <div class="form-grid">
+                        <label>
+                            <span>Nombre completo</span>
+                            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                        </label>
+                        <label>
+                            <span>Empresa</span>
+                            <input type="text" name="empresa" id="empresa" placeholder="Nombre de tu empresa" required>
+                        </label>
+                        <label>
+                            <span>WhatsApp</span>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Ej. 7XXXXXXX" required>
+                        </label>
+                        <label>
+                            <span>Servicio de interés</span>
+                            <select name="servicio" id="servicio" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option>Área Legal y Corporativa</option>
+                                <option>Área Contable y Tributaria</option>
+                                <option>Gestión del Talento Humano</option>
+                                <option>Servicios Integrados</option>
+                                <option>Asesoría general</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="full-width">
+                        <span>Cuéntanos tu necesidad</span>
+                        <textarea name="mensaje" id="mensaje" rows="5" placeholder="Describe brevemente lo que necesitas" required></textarea>
+                    </label>
+
+                    <button class="btn btn-primary btn-large" type="submit">Enviar por WhatsApp</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                  <div>
+                <h3>SINERGO GESTIÓN CORPORATIVA S.R.L.</h3>
+                <p>Su socio estratégico multidisciplinario en Bolivia.</p>
+                <div class="social-links" aria-label="Redes sociales">
+                    <a href="https://www.linkedin.com/company/sinergo-gestion-corporativa/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.78v2.16h.05c.53-1 1.83-2.16 3.77-2.16 4.03 0 4.78 2.66 4.78 6.12V24h-4v-8.09c0-1.93-.03-4.4-2.68-4.4-2.69 0-3.1 2.1-3.1 4.27V24h-4V8z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/share/1EVK4auZds/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.06 5.66 21.18 10.44 21.92v-7.02H7.9v-2.83h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.83h-2.34V21.9c4.78-.74 8.44-4.86 8.44-9.83z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.9A4.1 4.1 0 1 0 16.1 12 4.1 4.1 0 0 0 12 7.9zM18.4 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.14 12.14 0 0 1 3.15 4.6a4.28 4.28 0 0 0 1.32 5.72c-.6-.02-1.16-.18-1.65-.45v.05a4.28 4.28 0 0 0 3.43 4.2c-.39.11-.8.17-1.22.17-.3 0-.6-.03-.89-.08a4.28 4.28 0 0 0 4 2.97A8.58 8.58 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.72 8.72 0 0 0 22.46 6z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2s-.2-1.6-.8-2.3c-.7-.9-1.5-.9-1.9-1C17.8 2.5 12 2.5 12 2.5s-5.8 0-8.8.3c-.4 0-1.2 0-1.9 1C.7 4.6.5 6.2.5 6.2S.3 8 .3 9.8v1.4C.3 13.6.5 15.4.5 15.4s.2 1.6.8 2.3c.7.9 1.6.9 2 1 1.5.2 6.4.3 6.4.3s5.8 0 8.8-.3c.4 0 1.2 0 1.9-1 .6-.7.8-2.3.8-2.3s.2-1.8.2-3.6v-1.4c0-1.8-.2-3.6-.2-3.6zM9.8 15.5V8.5l6.2 3.5-6.2 3.5z"/></svg>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div>
+                <h3>Navegación</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Acerca de</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <div class="footer-contact">
+                    <p><a href="tel:+59161006161">+591 61006161</a></p>
+                    <p><a href="mailto:sinergogestioncorporativa@gmail.com">sinergogestioncorporativa@gmail.com</a></p>
+                </div>
+            </div>
+            <div>
+                <h3>Casa Matriz</h3>
+                <p>Pasaje Peatonal de la Casa de la Cultura,<br>Edificio Mariscal de Zepita, Bloque "B", Piso 3, Oficina 309.<br>Zona Central — La Paz, Bolivia.</p>
+                <p><a class="footer-map-link" href="https://www.google.com/maps/search/?api=1&query=Pasaje%20Peatonal%20de%20la%20Casa%20de%20la%20Cultura,%20Edificio%20Mariscal%20de%20Zepita,%20Bloque%20B,%20Piso%203,%20Oficina%20309,%20La%20Paz,%20Bolivia" target="_blank" rel="noopener noreferrer">Ver ubicación en mapa</a></p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-grid">
+                <div class="footer-bottom-left">
+                    <a href="#">Política de privacidad</a>
+                </div>
+                <div class="footer-bottom-center">
+                    <p>Copyright© 2025 | SINERGO GESTIÓN CORPORATIVA S.R.L. | Todos los derechos reservados</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>
+                        Designed by: 
+                        <a href="https://appyaa.com" target="_blank">
+                            aappya
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/59161006161?text=Hola%2C%20quiero%20solicitar%20una%20asesor%C3%ADa%20con%20SINERGO." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-float-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.06 0C5.44 0 .05 5.38.05 12.01c0 2.11.55 4.18 1.6 6l-1.7 6.2 6.36-1.67a11.9 11.9 0 0 0 5.74 1.46h.01c6.62 0 12.01-5.38 12.01-12.01 0-3.22-1.25-6.24-3.55-8.51zM12.06 21.98h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.87 9.87 0 0 1-1.52-5.29C2.15 6.58 6.52 2.2 12.06 2.2c2.64 0 5.12 1.03 6.98 2.9a9.79 9.79 0 0 1 2.9 6.91c0 5.54-4.38 9.97-9.88 9.97zm5.76-7.42c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.72.16-.21.31-.82 1.02-1 1.23-.18.2-.37.23-.68.08-.31-.16-1.3-.48-2.49-1.53-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.13-.64.13-.13.31-.37.47-.56.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.56-.08-.16-.72-1.73-.99-2.36-.26-.63-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.39-.29.31-1.1 1.07-1.1 2.6s1.13 3.01 1.29 3.22c.16.21 2.2 3.36 5.33 4.7.75.32 1.33.51 1.79.65.75.24 1.43.21 1.97.13.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.35.18-1.49-.08-.13-.29-.21-.6-.37z"/></svg>
+        </span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
