@@ -516,7 +516,7 @@ if (contactForm) {
             `Necesidad: ${mensaje}`,
         ].join("\n");
 
-        const whatsappUrl = `https://wa.me/59168440201?text=${encodeURIComponent(texto)}`;
+        const whatsappUrl = `https://wa.me/59161006161?text=${encodeURIComponent(texto)}`;
         window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     });
 }
